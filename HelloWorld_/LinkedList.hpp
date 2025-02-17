@@ -1,22 +1,21 @@
 ﻿#pragma once
 
-template <typename T>
+
 struct Node
 {
-	T data;
+	int data;
 	Node* next;
 
-	Node(T value)
+	Node(int value)
 	{
 		data = value;
 		next = nullptr;
 	}
 };
 
-template <typename T>
 class LinkedList
 {
-	T* head;
+	Node<>* head;
 	Node* tail;
 
 public:
